@@ -1,5 +1,5 @@
 // SEAF (Self Executing Anonymous Function)
-(function(){ console.log("JS Initialized");
+(function(){ console.log("JS Check Check");
 
 let years = document.querySelectorAll(".data-ref");
 
@@ -30,11 +30,11 @@ function showYearData(data) {
 
     // The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
+    document.getElementById('tlHead').innerHTML = `${year}`;
+    document.getElementById('tlDesc').innerHTML = `${description}`;
 
-	console.log(year);
-	console.log(description);
 }
 
-years.forEach( year =>  year.addEventListener('click', getData));
+years.forEach( year =>  year.addEventListener('mouseover', getData));
 
-}) ();
+})();
