@@ -25,10 +25,10 @@ if (isset($_GET["year"])) {
     //Fill the array with the result set and send it to the browser
     while($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
-    }
+    } 
 
     echo json_encode($rows);
-    // this is the point
+    // sends JSON back to the fetch. the important
 }
 
 
