@@ -3,7 +3,8 @@
 $host = "localhost";
 $user = "root";
 $password = "root";
-$db = "db_deepdream";
+$dbMAMP = "db_deepdream";
+$db = "db_brendanrogers";
 
 $conn = mysqli_connect($host, $user, $password, $db);
 
