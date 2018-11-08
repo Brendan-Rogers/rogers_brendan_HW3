@@ -1,12 +1,13 @@
 // SEAF (Self Executing Anonymous Function)
-(function(){ console.log("JS Check Check");
+(function(){ console.log("JS Initialized");
 
 let years = document.querySelectorAll(".data-ref");
 
 var waypoint = new Waypoint({
-  element: document.getElementById('thing'),
+  element: document.getElementById('graphic'),
   handler: function(direction) {
-    
+    document.getElementById('graphic').classList.add("lightSpeedIn");
+    console.log("animation executed!")
   }
 });
 
